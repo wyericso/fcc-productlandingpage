@@ -1,3 +1,53 @@
-body {
-    background-color: rgb(rgb(208, 208, 208), green, blue)
+body, #header {
+    background-color: rgb(255, 224, 192);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 1px solid;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#header-img {
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+#header, #header-shadow {
+    height: 60px;
+}
+
+main {
+    margin: auto;
+    width: 1000px;
+    border: 1px solid;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-img {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+}
+
+#features {
+    height: 1000px;
 }
