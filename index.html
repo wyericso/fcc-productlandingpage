@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link rel="stylesheet" href="main.css" />
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
@@ -10,10 +12,10 @@
         <img id="header-img" src="https://res.cloudinary.com/woooanet/image/upload/v1531464640/fcc/LogoMakr_6oTQHV.png">
         <nav id="nav-bar">
             <ul>
-                <li>Products</li>
-                <li>Features</li>
-                <li>Video</li>
-                <li>Email</li>
+                <li class="nav-link"><a href="#products">Products</a></li>
+                <li class="nav-link"><a href="#features">Features</a></li>
+                <li class="nav-link"><a href="#hkteam">HK Team</a></li>
+                <li class="nav-link"><a href="#subscribe">Subscribe Newsletter</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +26,36 @@
             <img class="product-img" id="team-img" src="http://sportsroad.hk/wp-content/uploads/2016/08/NikeJersey_hkfootball_20160824_04.jpg">
             <img class="product-img" src="https://s3.amazonaws.com/nikeinc/assets/61696/nike-hong-kong-2016-17-kit-2_square_1600.jpg?1472061982">
         </div>
-        <div id="features"></div>
+        <div id="features">
+            <i class="fas fa-tshirt"></i>
+            <div>
+                <span class="feature-title">Premium Material</span>
+                <br>Simple yet refined. Jersey Online sets the standard for comfort, quality and functionality, and it all starts with our carefully selected, high-quality materials from sustainable sources.
+            </div>
+            <i class="fas fa-truck"></i>
+            <div>
+                <span class="feature-title">Fast Delivery</span>
+                <br>Orders are delivered after you place your order and you can track the delivery in real time.
+            </div>
+            <i class="fas fa-thumbs-up"></i>
+            <div>
+                <span class="feature-title">Guaranteed Quality</span>
+                <br>For every purchase you make, we will ensure there are no damages or faults before delivery.
+            </div>
+        </div>
+        <div id="hkteam">
+            <iframe id="video" src="https://www.youtube.com/embed/0RiwSKs-wAc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div id="subscribe">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <input type="email" id="email" placeholder="Enter your email address here">
+                <br>
+                <button type="submit" id="submit">Subscribe our newsletter</button>
+            </form>
+        </div>
+        <div id="copyright">
+            &copy; Eric So 2018. All Rights Reserved.
+        </div>
     </main>
 </body>
 </html>
