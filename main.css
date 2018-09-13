@@ -13,9 +13,13 @@ body, #header {
     width: 100%;
 }
 
+#header > a {
+    margin-left: 50px;
+    height: 100%;
+}
+
 #header-img {
     height: 100%;
-    margin-left: 50px;
 }
 
 ul {
@@ -43,11 +47,14 @@ main {
     width: 1000px;
 }
 
-main > div {
-    margin-top: 60px;
+.anchor {
+    height: 70px;
+    margin-top: -70px;
+    border: 1px solid;
+    visibility: hidden;
 }
 
-#products {
+#products-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -60,7 +67,7 @@ main > div {
     border-radius: 10px;
 }
 
-#features {
+#features-section {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -82,7 +89,7 @@ i {
     text-align: center;
 }
 
-#hkteam {
+#hkteam-section {
     border: 1px solid;
     width: 560px;
     height: 315px;
@@ -95,7 +102,7 @@ iframe {
     height: 100%;
 }
 
-#subscribe, #copyright {
+#subscribe-section, #copyright-section {
     text-align: center;
 }
 
