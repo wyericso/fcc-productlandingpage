@@ -5,8 +5,8 @@ body, #header {
 
 #header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
     position: fixed;
     left: 0;
     top: 0;
@@ -15,21 +15,30 @@ body, #header {
 
 #header > a {
     margin-left: 50px;
-    height: 100%;
+    height: 60px;
 }
 
 #header-img {
     height: 100%;
 }
 
+nav {
+    max-width: 550px;
+    margin: auto 0;
+}
+
 ul {
     margin: 0;
     list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 li {
-    display: inline;
     margin: 0 20px;
+    white-space: nowrap;
 }
 
 a, a:hover {
@@ -44,12 +53,12 @@ a, a:hover {
 
 main {
     margin: auto;
-    width: 1000px;
+    max-width: 1000px;
 }
 
 .anchor {
-    height: 100px;
-    margin-top: -100px;
+    height: 120px;
+    margin-top: -120px;
     border: 1px solid;
     visibility: hidden;
 }
@@ -57,7 +66,7 @@ main {
 #products-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .section {
@@ -69,10 +78,11 @@ main {
     height: 320px;
     object-fit: cover;
     border-radius: 10px;
+    margin: 5px;
 }
 
 #features-section {
-    width: 800px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -95,7 +105,7 @@ i {
 
 #hkteam-section {
     border: 1px solid;
-    width: 560px;
+    max-width: 560px;
     height: 315px;
     margin-left: auto;
     margin-right: auto;
@@ -117,4 +127,41 @@ iframe {
 
 #email, #submit {
     font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+    #red-shirt {
+        order: 1;
+    }
+    #team-img {
+        order: 3;
+    }
+    #white-shirt {
+        order: 2;
+    }
+}
+
+@media (max-width: 670px) {
+    #red-shirt {
+        order: 2;
+    }
+    #team-img {
+        order: 1;
+    }
+    #white-shirt {
+        order: 3;
+    }
+}
+
+@media (max-width: 846px) {
+    #header {
+        justify-content: center;
+    }
+    #header, #header-shadow {
+        height: 100px;
+    }
+    #header > a {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
